@@ -13,15 +13,23 @@ var passwordLength;
 function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
-    window
-
     passwordText.value = password;
-
 }
 
 function generatePassword(){
+    passwordLength = prompt("How many characters would you like your password to be (between 8-128 characters:");
+    if (passwordLength < 8) {
+        alert("Password length must be a number between 8-128 characters" );
+        generatePassword();
+      } else if (passwordLength > 128) {
+        alert("Password length must be a number between 8-128 characters" );
+        generatePassword();
+      } else if (isNaN(passwordLength)) {
+        alert("Password length must be a number between 8-128 characters" );
+        generatePassword();
+      }   
+    }
 
-}
 
 
 // Add event listener to generate button
