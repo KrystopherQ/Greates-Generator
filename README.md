@@ -11,7 +11,7 @@
 
 
 ## Usage 
-
+![Demo of password gen](./assests/img/demo.gif)
             
 ## License
 
