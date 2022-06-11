@@ -27,7 +27,27 @@ function generatePassword(){
       } else if (isNaN(passwordLength)) {
         alert("Password length must be a number between 8-128 characters" );
         generatePassword();
-      }   
+      } else { 
+        upperCheck = prompt("Do you want uppercase letters in your password? (yes or no) ");
+        upperCheck = upperCheck.toLowerCase();
+    
+      if (upperCheck === null || upperCheck === "") {
+        alert("Please answer yes or no");
+        generatePassword();
+    
+      } else if (upperCheck === "yes" || upperCheck ==="y") {
+        upperCheck = true;
+        return upperCheck;
+    
+      } else if (upperCheck === "no" || upperCheck ==="n") {
+        upperCheck = false;
+        return upperCheck;
+      
+      } else {
+        alert("Please answer yes or no");
+        generatePassword();
+      }
+    }      
     }
 
 
