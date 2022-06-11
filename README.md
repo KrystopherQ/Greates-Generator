@@ -1,7 +1,7 @@
 # Greatest Generator
 
 ## Description 
-    Auto generate a password by answering a sequnce of prompts.
+  Auto generate a password by answering a sequnce of prompts. Visit the deployed site [here](https://krystopherq.github.io/Greatest-Generator/).
             
 ## Table of Contents
  * [Usage](#usage)
